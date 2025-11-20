@@ -90,7 +90,7 @@ export default function TaskForm({ data, type, setOpen, onSuccess }) {
           onValueChange={(value) => setValue("status", value, { shouldValidate: true })}
           disabled={submitting}
         >
-          <SelectTrigger className="border-gray-300 border rounded-md text-sm bg-white p-2 shadow-sm flex flex-row justify-between w-full">
+          <SelectTrigger className="border-gray-300 border rounded-md text-sm bg-white p-2 shadow-sm flex flex-row justify-between w-full lowercase">
            <SelectValue placeholder="Status" />
             <FaChevronDown className="h-4 w-4" />
           </SelectTrigger>

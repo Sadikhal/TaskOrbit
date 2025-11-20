@@ -26,7 +26,7 @@ const Tasks = () => {
   const sortOrder = params.get("sort") || "newest";
   const currentPage = Number(params.get("page") || 1);
 
-  const pageSize = perPage || 2;
+  const pageSize = perPage || 5;
   const totalPages = Math.max(1, Math.ceil(total / pageSize));
 
   // To update search params
@@ -89,12 +89,13 @@ const Tasks = () => {
   // handling updation of tasks
   const handleUpdate = async (id, data) => {
     try {
-      await taskUpdate({ id, data }).unwrap();
+      await taskUpdate(id, data).unwrap(); 
       toast.success("Task updated");
     } catch (err) {
       toast.error(err || "Failed to update task");
     }
   };
+
 
   // handling deletion of tasks
   const handleDelete = async (id) => {
@@ -129,7 +130,7 @@ const Tasks = () => {
 
       <td className="px-2">
         <span
-          className={`px-2 py-1 rounded-full text-xs ${getBadgeClass(
+          className={`px-2 py-1 rounded-full text-xs text-nowrap ${getBadgeClass(
             item.status
           )}`}
         >

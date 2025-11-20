@@ -48,7 +48,7 @@ export const getTasks = async (req, res, next) => {
       status = "",
       sort = "newest",
       page = 1,
-      limit = 2,
+      limit = 5,
     } = req.query;
 
     //pagination handling

@@ -71,7 +71,7 @@ const initialState = {
   error: null,
   total: 0,
   page: 1,
-  perPage: 2,
+  perPage: 5,
 };
 
 const taskSlice = createSlice({
@@ -93,7 +93,7 @@ const taskSlice = createSlice({
         state.loading = false;
         state.list = action.payload.tasks || [];
         state.total = action.payload.total || 0;
-        state.perPage = action.payload.perPage || 2;
+        state.perPage = action.payload.perPage || 5;
       })
       .addCase(fetchTasks.rejected, (state, action) => {
         state.loading = false;
