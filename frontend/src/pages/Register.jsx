@@ -104,9 +104,9 @@ const Register = () => {
                     error={errors?.number}
                     validation={{
                       required: "Phone number is required",
-                      minLength: {
-                        value: 10,
-                        message: "Phone number must be at least 10 digits",
+                      pattern: {
+                        value: /^[0-9]{10}$/,
+                        message: "Phone number must be exactly 10 digits",
                       },
                     }}
                   />
