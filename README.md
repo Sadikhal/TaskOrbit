@@ -216,9 +216,12 @@ Then open:
 (Add your screenshots in `/screenshots` folder and replace below)
 
 ```
-![Dashboard Screenshot](screenshots/dashboard.png)
-![Tasks Page](screenshots/tasks.png)
-![Login Page](screenshots/login.png)
+![Dashboard Screenshot](https://res.cloudinary.com/dftleqqgr/image/upload/v1763674732/Screenshot_282_ikl5gm.png)
+![Tasks Page](https://res.cloudinary.com/dftleqqgr/image/upload/v1763674733/Screenshot_283_dak7g3.png)
+![Profile Page](https://res.cloudinary.com/dftleqqgr/image/upload/v1763674734/Screenshot_285_ecsdqj.png)
+![Login Page](https://res.cloudinary.com/dftleqqgr/image/upload/v1763674733/Screenshot_281_wqifue.png)
+![Register Page](https://res.cloudinary.com/dftleqqgr/image/upload/v1763674733/Screenshot_280_ohy1r2.png)
+
 ```
 
 ---
