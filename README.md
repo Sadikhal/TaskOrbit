@@ -26,7 +26,7 @@ Use the following **sample test credentials** to instantly access the dashboard:
 
 ```
 
-Email: [sadikhalikvr@gmail.com](mailto:sadikhalikvr@gmail.com)
+Email: sadikhalikvr@gmail.com
 Password: Sadikh@123
 
 ```
