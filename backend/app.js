@@ -5,6 +5,7 @@ import cors from 'cors';
 
 import authRoutes from './routes/auth.route.js';
 import taskRoutes from './routes/task.route.js';
+import healthRoute from "./routes/health.route.js";
 import { connect } from './lib/db.js';
 
 dotenv.config();
@@ -26,6 +27,8 @@ app.use(cors({
 // API routes
 app.use('/api/auth', authRoutes);
 app.use('/api/tasks', taskRoutes);
+//only for checking the performance
+app.use("/api/health", healthRoute);
 
 // Global error handler
 app.use((err, req, res, next) => {
